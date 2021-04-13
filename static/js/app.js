@@ -40,7 +40,7 @@ function runEnter() {
   var inputValue = inputElement.property("value");
   
   var inputCityElement = d3.select("#city");
-  var inputCityValue = inputCityElement.property("value");
+  var inputCityValue = inputCityElement.property("value").toLowerCase().trim();
 
   //use this one when city and date are neither blank
   if (inputCityValue.length !== 0 && inputValue.length !== 0) {
